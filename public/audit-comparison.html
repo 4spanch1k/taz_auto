@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hyundai visual QA comparison</title>
+    <style>
+      :root { color-scheme: light; font-family: Arial, sans-serif; background: #e9edf2; color: #152235; }
+      body { margin: 0; padding: 32px; }
+      h1 { margin: 0 0 24px; font-size: 24px; }
+      .row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-bottom: 32px; }
+      figure { margin: 0; padding: 16px; background: #fff; border-radius: 12px; box-shadow: 0 4px 18px rgb(18 30 47 / 10%); }
+      figcaption { margin-bottom: 12px; font-weight: 700; }
+      img { display: block; width: 100%; height: auto; border: 1px solid #dce2e9; }
+      @media (max-width: 800px) { body { padding: 16px; } .row { grid-template-columns: 1fr; } }
+    </style>
+  </head>
+  <body>
+    <h1>Hyundai source vs local implementation</h1>
+    <div class="row">
+      <figure><figcaption>Source · desktop (normalized)</figcaption><img src="/audit/source-hyundai-desktop-normalized.png" alt="Source desktop" /></figure>
+      <figure><figcaption>Local · desktop</figcaption><img src="/audit/local-hyundai-desktop.png" alt="Local desktop" /></figure>
+    </div>
+    <div class="row">
+      <figure><figcaption>Source · mobile top (normalized)</figcaption><img src="/audit/source-hyundai-mobile-normalized.png" alt="Source mobile top" /></figure>
+      <figure><figcaption>Local · mobile top</figcaption><img src="/audit/local-hyundai-mobile-top-final.png" alt="Local mobile top" /></figure>
+    </div>
+    <div class="row">
+      <figure><figcaption>Source · mobile dealers (normalized)</figcaption><img src="/audit/source-hyundai-dealers-mobile-normalized.png" alt="Source mobile dealers" /></figure>
+      <figure><figcaption>Local · mobile dealers, compact CTA</figcaption><img src="/audit/local-hyundai-dealers-mobile-final.png" alt="Local compact dealer CTA" /></figure>
+    </div>
+  </body>
+</html>

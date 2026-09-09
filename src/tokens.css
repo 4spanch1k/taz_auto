@@ -1,0 +1,58 @@
+:root {
+  /* --- Primitives (сырые значения, не используются напрямую в компонентах) --- */
+  --gray-100: #F1F4F8;
+  --white: #FFFFFF;
+  --ink-700: #1F2937;
+  --ink-900: #121E2F;
+  --ink-950: #111820;
+  --slate-500: #63748A;
+  --blue-600: #0068E3;
+  --indigo-600: #263AD7;
+  --amber-500: #FF8718;
+  --blue-100: #D8E6FB;
+  --ink-a12: rgba(41, 55, 72, 0.12);
+  --black: #000000;
+
+  /* база из shadcn-кита */
+  --slate-50: #F8FAFC;
+  --slate-100: #F1F5F9;
+  --slate-200: #E2E8F0;
+  --slate-900: #0F172A;
+
+  /* --- Semantic (на эти биндится Tailwind, эти же можно юзать напрямую в CSS) --- */
+  --bg-page: var(--gray-100);
+  --bg-surface: var(--white);
+  --bg-chip: var(--blue-100);
+  --bg-app-banner: var(--black);
+  --bg-control-muted: var(--slate-100);
+  --text-body: var(--ink-700);
+  --text-heading: var(--ink-900);
+  --text-heading-card: var(--ink-950);
+  --text-muted: var(--slate-500);
+  --text-link: var(--blue-600);
+  --action-primary: var(--indigo-600);
+  --action-accent: var(--amber-500);
+  --border-divider: var(--ink-a12);
+  --border-control: var(--slate-200);
+  --radius-control: 8px;
+  --radius-control-lg: 12px;
+  --radius-card: 16px;
+  --space-100: 8px;
+  --space-200: 16px;
+  --space-350: 28px;
+  --space-500: 40px;
+  --space-700: 80px;
+  --container-max: 1200px;
+  --header-height: 56px;
+  --shadow-header: 0 0 16px rgba(0, 0, 0, 0.1);
+  --font-heading: 'Okto', sans-serif;
+  --font-body: 'InterDisplay', sans-serif;
+}
+
+/* Dark island — локальная тема для import workflow-shell. */
+.dark-island {
+  --bg-surface: var(--slate-900);
+  --text-body: var(--white);
+  --text-heading: var(--white);
+  --border-control: rgba(255, 255, 255, 0.12);
+}
